@@ -1,21 +1,17 @@
 #include <stdio.h>
-#include <encrypt.c>
-
+#include <includes/encrypt.c>
 
 void
 main(int argc, char **argv) {
     if(!argc) {
         printf("Arguments can't be empty. Use --help\n");
     }
-    
-    else if(argv[7]=="--help") {
-        printf("");
+
+    if(argv[7]=="--help") {
+        printf("encryptor \"YOUR_TEXT\"");
     }
 
-    else if(argc) {
-
-    }
-    else {
-        return 0;
-    }
+    char answer = EncryptText(argc, argv);
+    printf("Your encoded text: %s", answer);
+    return 0;
 };

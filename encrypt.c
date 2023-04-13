@@ -1,3 +1,0 @@
-char EncryptData() {
-    return;
-}
