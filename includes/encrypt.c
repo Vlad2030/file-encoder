@@ -7,4 +7,4 @@ EncryptText(int data, char **text) {
     }
 
     
-}
+};
